@@ -16,5 +16,14 @@
     "grunt-contrib-cssmin": "^2.2.0",
     "grunt-contrib-uglify": "^3.0.1",
     "grunt-contrib-watch": "^1.0.0"
+  },
+  "dependencies": {
+    "underscore.string": "^3.3.4",
+    "unpipe": "^1.0.0",
+    "uri-path": "^1.0.0",
+    "utils-merge": "^1.0.0",
+    "websocket-driver": "^0.6.5",
+    "which": "^1.2.14",
+    "wrappy": "^1.0.2"
   }
 }
