@@ -1,0 +1,136 @@
+@import url(partials/normalise.css);
+/* line 1, ../sass/partials/_base.scss */
+.container {
+  max-width: 980px;
+  margin: auto;
+}
+
+/* line 3, ../sass/homepage.scss */
+p,
+h2,
+ul {
+  font-family: "PT Sans", sans-serif;
+}
+
+/* line 9, ../sass/homepage.scss */
+.navbar {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  outline: 1px solid black;
+  z-index: 99;
+}
+/* line 16, ../sass/homepage.scss */
+.navbar div {
+  margin: auto;
+  max-width: 980px;
+}
+/* line 19, ../sass/homepage.scss */
+.navbar div ul {
+  padding: 20px 0;
+  margin: 0;
+  font-size: 15px;
+  list-style-type: none;
+  font-family: "Bree Serif", serif;
+}
+/* line 26, ../sass/homepage.scss */
+.navbar div li {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+}
+
+/* line 34, ../sass/homepage.scss */
+.slick-dots {
+  transform: translateY(-100%);
+}
+
+/* line 38, ../sass/homepage.scss */
+.carousel-container {
+  margin-top: 60px;
+  padding: 50px 0;
+}
+/* line 41, ../sass/homepage.scss */
+.carousel-container .carousel {
+  max-width: 980px;
+  margin: 0px auto;
+  background-color: beige;
+}
+/* line 45, ../sass/homepage.scss */
+.carousel-container .carousel img {
+  width: 100%;
+}
+
+/* line 51, ../sass/homepage.scss */
+.tedx {
+  position: relative;
+}
+/* line 54, ../sass/homepage.scss */
+.tedx h2,
+.tedx p {
+  width: 65%;
+  padding: 5px 30px;
+  box-sizing: border-box;
+  text-align: center;
+}
+/* line 61, ../sass/homepage.scss */
+.tedx p {
+  line-height: 25px;
+}
+/* line 64, ../sass/homepage.scss */
+.tedx img {
+  width: 35%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* line 72, ../sass/homepage.scss */
+.footer-outer {
+  background-color: #373833;
+}
+/* line 74, ../sass/homepage.scss */
+.footer-outer .copyrightlayer {
+  padding: 20px 0;
+  background-color: #232323;
+  text-align: center;
+  box-shadow: inset 0px 0px 3px;
+}
+/* line 79, ../sass/homepage.scss */
+.footer-outer .copyrightlayer p {
+  color: #989898;
+  margin: 0;
+  font-size: 12px;
+}
+
+/* line 87, ../sass/homepage.scss */
+.footer {
+  margin-top: 50px;
+  padding: 50px 10px;
+  display: flex;
+}
+/* line 91, ../sass/homepage.scss */
+.footer * {
+  margin: 0 10px;
+}
+/* line 94, ../sass/homepage.scss */
+.footer img {
+  display: inline-block;
+  margin: 0 10px;
+}
+/* line 98, ../sass/homepage.scss */
+.footer img.tedx-x {
+  height: 200px;
+}
+/* line 101, ../sass/homepage.scss */
+.footer img.tedxpolicy {
+  vertical-align: top;
+  width: 250px;
+}
+/* line 105, ../sass/homepage.scss */
+.footer ul {
+  color: beige;
+  list-style-type: none;
+  padding: 0;
+}
