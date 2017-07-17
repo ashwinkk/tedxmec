@@ -1,0 +1,76 @@
+.navbar {
+    text-align: center;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: #f40000;
+    div {
+        margin: auto;
+        max-width: 980px;
+        ul {
+            padding: 20px 0;
+            margin: 0;
+            font-size: 15px;
+            list-style-type: none;
+            font-family: $navbarFont;
+            display: flex;
+            justify-content: space-around;
+        }
+        li {
+            width: 20%;
+            text-align: center;
+        }
+    }
+}
+
+.footer-outer {
+    background-color: #373833;
+    .copyrightlayer {
+        padding: 20px 0;
+        background-color: #232323;
+        text-align: center;
+        box-shadow: inset 0px 0px 3px;
+        p {
+            color: #989898;
+            margin: 0;
+            font-size: 12px;
+        }
+    }
+}
+
+.footer {
+    margin-top: 50px;
+    padding: 50px 10px;
+    display: flex;
+    * {
+        margin: 0 10px;
+    }
+    img {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    img.tedx-x {
+        height: 200px;
+    }
+    img.tedxpolicy {
+        vertical-align: top;
+        width: 250px;
+    }
+    ul {
+        color: beige;
+        list-style-type: none;
+        padding: 0;
+        li {
+            margin-top: 10px;
+            color: #b5b7ad;
+        }
+        li.head {
+            font-weight: bolder;
+            font-size: 19px;
+            margin-top: 0;
+            margin-bottom: 25px;
+            color: #f5eeee;
+        }
+    }
+}
