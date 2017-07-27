@@ -7,6 +7,11 @@
 	img.gallery-image {
 		width: 100%;
 	}
+	@media (max-width: $phoneMax) {
+		padding: 0;
+		width: 100%;
+		padding: 10px;
+	}
 }
 
 #window-container {
@@ -17,6 +22,8 @@
 	width: 100%;
 	z-index: -1;
 	opacity: 0;
+	background: rgba(0, 0, 0, 0.5);
+	transition: z-index 0.3s 0.2s, opacity 0.3s 0.2s;
 	.image-enlarged {
 		width: 60%;
 		margin: auto;
@@ -25,6 +32,24 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		img {
+			width: 100%;
+		}
+		.controls {
+			display: flex;
+			justify-content: space-around;
+			margin: 20px auto;
+			text-align: center;
+			div {
+				width: 30%;
+			}
+			a {
+				color: white;
+				cursor: pointer;
+			}
+		}
+	}
+	@media (max-width: $phoneMax) {
+		.image-enlarged {
 			width: 100%;
 		}
 	}

@@ -5,34 +5,33 @@
     
 {% block content %}
     <div class="container">
-    {% for each in speakers %}
-        {% if (loop.index%4==0) %}
-            <div class="row">
-        {% endif %}
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 speaker-container">
-            <div class="speaker-image">
-                <img src={{each.url}} class="img-responsive speaker" />
-            </div>
-            <div class="speaker-name">
-                <p class="text-center">{{each.name}}</p>
-            </div>
-            <div class="speaker-overlay text-center">
-                <div class="speaker-overlay-desc">
-                    <p>{{each.description | truncate(150) }}</p>
-                    <button id={{loop.index-1}} class="button-default detail-view">View more</button>
+    {% for groups in speakers | slice(10) %}
+        <div class="row">
+        {% set count= loop.index0 %}
+        {% for each in groups %}
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-10 col-xs-offset-1 speaker-container">
+                <div class="speaker-image">
+                    <img src={{each.url}} class="img-responsive speaker" />
+                </div>
+                <div class="speaker-name">
+                    <p class="text-center">{{each.name}}</p>
+                </div>
+                <div class="speaker-overlay text-center">
+                    <div class="speaker-overlay-desc">
+                        <p>{{each.description | truncate(150) }}</p>
+                        <button id={{loop.index0+count*3}} class="button-default detail-view">View more</button>
+                    </div>
                 </div>
             </div>
+        {% endfor %}
         </div>
-        {% if (loop.index%4==0) %}
-            </div>
-        {% endif %}
     {% endfor %}
     </div>
 
     <div id="modal-container" class="modal-container">
         <div id="modal" class="speaker-modal">
             <div id="modal-inner">
-                <img src="" class="col-md-5 modal-image" />
+                <img src="" class="col-md-5 col-xs-12 modal-image" />
                 <h3 class="modal-head"></h3>
                 <p class="modal-para" ></p>
             </div>

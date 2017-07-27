@@ -6,10 +6,11 @@
 .speaker-container {
 	padding: 10px;
 	box-sizing: border-box;
-	border-radius: 5px;
+	border-radius: 1px;
 	overflow: hidden;
 	position: relative;
 	z-index: 1;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 	.speaker {
 		width: 100%;
 	}
@@ -28,7 +29,6 @@
 		.speaker-overlay-desc {
 			padding: 30px;
 			width: 100%;
-			height: 100%;
 			position: absolute;
 			left: 50%;
 			top: 50%;
@@ -45,6 +45,9 @@
 		.speaker-overlay {
 			opacity: 1;
 		}
+	}
+	@media (max-width: $phoneMax) {
+		box-shadow: none;
 	}
 }
 
@@ -70,7 +73,10 @@
 		#modal-inner {
 			padding: 30px;
 			.modal-image {
-				padding-left: 0;
+				padding: 10px;
+				background-color: white;
+				margin-right: 15px;
+				box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 			}
 			.modal-para {
 				font-size: 15px;
@@ -85,12 +91,36 @@
 		#close-modal {
 			width: 100%;
 			border: 0;
-			padding: 10px;
+			padding: 20px;
 			&:focus {
 				outline: 0;
 			}
 			&:active {
 				background: red;
+			}
+		}
+	}
+
+	@media (max-width: $phoneMax) {
+		top: 81px;
+		.speaker-modal {
+			width: 100%;
+			height: calc(100vh - 81px);
+			overflow: auto;
+			transform: none;
+			box-shadow: none;
+			left: 0;
+			top: 0;
+			#modal-inner {
+				width: 100%;
+				.modal-image {
+					margin-bottom: 50px;
+					padding: 10px;
+					margin-right: 0;
+				}
+				.modal-head {
+					text-align: center;
+				}
 			}
 		}
 	}

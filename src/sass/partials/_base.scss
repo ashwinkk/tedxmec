@@ -1,9 +1,26 @@
 .container {
-    max-width: 980px;
-    margin: 90px auto;
+	max-width: 980px;
+	margin: 90px auto;
 }
 
-$contentFont: 'PT Sans',
-sans-serif;
-$navbarFont: 'Bree Serif',
-serif;
+$contentFont: 'PT Sans', sans-serif;
+$navbarFont: 'Montserrat', sans-serif;
+
+$phoneMax: 600px;
+$iphone5: 360px;
+$ipad: 800px;
+
+a,
+a:hover,
+a:active {
+	text-decoration: none;
+}
+
+.stay {
+	overflow-y: hidden;
+}
+
+#content,
+#footer-outer {
+	transition: filter 0.3s;
+}

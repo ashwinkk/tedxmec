@@ -4,9 +4,21 @@
 	top: 0;
 	width: 100%;
 	z-index: 99;
+	height: 80px;
 	div {
 		margin: auto;
 		max-width: 980px;
+		display: flex;
+		height: inherit;
+		justify-content: space-between;
+		border-bottom: 1px solid black;
+		#navbar-button {
+			display: none;
+		}
+		img {
+			height: 40%;
+			margin: auto 10px;
+		}
 		ul {
 			padding: 20px 0;
 			margin: 0;
@@ -15,12 +27,92 @@
 			font-family: $navbarFont;
 			display: flex;
 			justify-content: space-around;
+			margin: auto 0px;
+			width: 60%;
+			li {
+				width: 10%;
+			}
+			@media (max-width: $phoneMax) {
+				display: none;
+			}
 		}
-		li {
-			width: 20%;
-			text-align: center;
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+		@media (max-width: $phoneMax) {
+			#navbar-button {
+				display: block;
+			}
 		}
 	}
+	@media (max-width: $phoneMax) {
+		position: fixed;
+		background: white;
+	}
+}
+
+.navbar-mob {
+	font-family: $navbarFont;
+	opacity: 0;
+	z-index: -1;
+	transition: z-index 0.3s 0.2s, opacity 0.3s 0.2s, background 0.3s 0.2s;
+	position: fixed;
+	top: 80px;
+	left: 0;
+	i {
+		display: block;
+		font-size: 50px;
+	}
+	width: 100%;
+	height: calc(100% - 80px);
+	@media (max-width: $phoneMax) {
+		h2 {
+			color: slategray;
+			font-weight: bolder;
+		}
+		div {
+			text-align: center;
+			div {
+				font-size: 15px;
+				padding: 10px;
+				a {
+					color: black;
+				}
+			}
+		}
+		#home {
+			i {
+				color: white;
+			}
+		}
+		#gallery {
+			i {
+				color: lightslategrey;
+			}
+		}
+		#venue {
+			i {
+				color: crimson;
+			}
+		}
+		#speakers {
+			i {
+				color: darkcyan;
+			}
+		}
+		#about {
+			i {
+				color: cornflowerblue;
+			}
+		}
+	}
+}
+
+.active-nav {
+	z-index: 99;
+	opacity: 1;
+	background: rgba(255, 255, 255, 0.6);
 }
 
 .footer-outer {
@@ -71,6 +163,50 @@
 			margin-top: 0;
 			margin-bottom: 25px;
 			color: #f5eeee;
+		}
+	}
+
+	@media (max-width: $ipad) {
+		justify-content: space-around;
+		.tedx-x {
+			margin-bottom: 10px;
+		}
+
+		.tedxmec-footer {
+			width: 30%;
+		}
+	}
+
+	@media (max-width: $phoneMax) {
+		flex-direction: row-reverse;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.connect-footer,
+		.tedxmec-footer,
+		.mec-footer {
+			margin-bottom: 20px;
+			width: unset;
+		}
+		.connect-footer {
+			order: 0;
+		}
+		.tedxmec-footer {
+			order: 2;
+			text-align: center;
+			.tedx-x {
+				height: 150px;
+			}
+			.tedxpolicy {
+				width: 200px;
+			}
+			img {
+				margin-top: 10px;
+			}
+		}
+	}
+	@media (max-width: $iphone5) {
+		* {
+			margin: 0 5px;
 		}
 	}
 }

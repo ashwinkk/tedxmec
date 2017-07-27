@@ -3,13 +3,12 @@
 @import 'partials/_headfoot.scss';
 @import 'partials/normalise.scss';
 
-p {
-	font-size: 15px;
-}
-
 .cover {
 	margin: 0px;
 	padding: 0px !important;
+	width: 100% !important;
+	max-width: unset;
+	margin-top: 81px;
 	img {
 		width: 100%;
 	}

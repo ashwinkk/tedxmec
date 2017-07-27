@@ -7,7 +7,8 @@
         <title>TEDxMEC 2017</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <link href="https://fonts.googleapis.com/css?family=Bree+Serif|PT+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans" rel="stylesheet">
+        <script src="https://use.fontawesome.com/5724474dc9.js"></script>
         {% block stylesheets %}
         {% endblock %}        
         <style>
@@ -16,14 +17,15 @@
         </style>
     </head>
     <body>
-        {% include 'navbar.njk' %}
-
-        {% block content %}
-        {% endblock %}
+        {% include './navbar.njk' %}
+        <div id="content">
+            {% block content %}
+            {% endblock %}
+        </div>
 
         
-        {% include 'footer.njk' %}
+        {% include './footer.njk' %}
     </body>
-    <script src="/dist/build.js"></script>
+    <script src="build.js"></script>
 
 </html>

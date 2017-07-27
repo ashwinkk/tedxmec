@@ -43,6 +43,11 @@ body {
 			}
 		}
 	}
+	@media (max-width: $phoneMax) {
+		.row {
+			margin: 0;
+		}
+	}
 }
 
 #map {
@@ -50,6 +55,7 @@ body {
 	border-radius: 5px;
 	overflow: none;
 	height: 400px !important;
+	margin-top: 81px;
 }
 
 h3 {

@@ -63,7 +63,7 @@ module.exports = function(grunt) {
 				files: "index.html"
 			},
 			nuns: {
-				files: "src/layouts/**/*.njk",
+				files: ["src/layouts/**/*.njk", "src/partials/**/*.njk"],
 				tasks: ["renderNunjucks"],
 				event: ["all"]
 			}

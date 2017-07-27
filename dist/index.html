@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -6,7 +7,8 @@
         <title>TEDxMEC 2017</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <link href="https://fonts.googleapis.com/css?family=Bree+Serif|PT+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans" rel="stylesheet">
+        <script src="https://use.fontawesome.com/5724474dc9.js"></script>
 
     <link rel="stylesheet" href="/src/css/homepage.css">
 
@@ -15,20 +17,36 @@
         </style>
     </head>
     <body>
-
-        <div class="page-head">
-            <div class="navbar">
-                <div>
-                    <ul>
-                        <li>Home</li>
-                        <li>Gallery</li>
-                        <li>Venue</li>
-                        <li>Previous Speakers</li>
-                        <li>About</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="">
+    <div class="navbar">
+        <div>
+            <img src="imgs/logo.png">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="speakers.html">VENUE</a></li>
+                <li><a href="venue.html">SPEAKERS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+            <button id="navbar-button">Somebutton</button>
         </div>
+    </div>
+</div>
+<div class="navbar-mob" id="navbar-mob">
+    <div>
+        <div class="menu-list">
+            <h2>PAGES</h2>
+            <div class="col-xs-6" id="home">
+                <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>HOME</a>
+            </div>
+            <div class="col-xs-6" id="gallery"><a href="gallery.html"><i class="fa fa-camera" aria-hidden="true"></i>GALLERY</a></div>
+            <div class="col-xs-6" id="venue"><a href="venue.html"><i class="fa fa-map-marker" aria-hidden="true"></i>VENUE</a></div>
+            <div class="col-xs-6" id="speakers"><a href="speakers.html"><i class="fa fa-microphone" aria-hidden="true"></i></i>SPEAKERS</a></div>
+            <div class="col-xs-6" id="about"><a href="about.html"><i class="fa fa-exclamation-circle" aria-hidden="true"></i></i>ABOUT</a></div>
+        </div>
+    </div>
+</div>
+        <div id="content">
 
     <div class="container">
         <div class="ted">
@@ -47,13 +65,13 @@
     <div class="container">
         <div class="tedx">
             <h2 class="para-head">TEDx</h2>
-            <img src="/dist/imgs/tedxinfo.png">
+            <img src="imgs/tedxinfo.png">
             <p>TEDx is a group of local, self-organized events that bring people together to share a TED-like experience. These events are hyperlocal and take up issues that are relevant to the hosting community and are free from corporate, religious and political agenda. Each event is branded as a TEDx, where the x = independently organized TED event. At every TEDx event, TEDTalks videos and live speakers combine to spark deep discussion and meaningful connections within the audience. Every TEDx conference remains true to the core philosophy of TED and celebrates Ideas worth spreading.</p>
         </div>
     </div>
     <div class="container tedxmec-container">
         <div class="x-png">
-            <img src="/dist/imgs/cutout.png" />
+            <img src="imgs/cutout.png" />
         </div>
         <div class="tedxmec">
             <h2 class="para-head">TEDxMEC</h2>
@@ -68,10 +86,10 @@
                 <p>Since the dawn of time mankind has always wished to manipulate time and predict the future. This fantasy has permeated our movies, comics and deepest desires.</p>
                 <p>So what is it that makes the unknown future oh so mysterious?</p>
                 <ul>
-                    <li>The hard struggles and choices that we make?</li>
-                    <li>The societal pressure that we succumb to?</li>
-                    <li>The responsibilities that we partake?</li>
-                    <li>Or is  it the unpredictable element of surprise that springs upon us?</li>
+                    <li><p>The hard struggles and choices that we make?</p></li>
+                    <li><p>The societal pressure that we succumb to?</p></li>
+                    <li><p>The responsibilities that we partake?</p></li>
+                    <li><p>Or is  it the unpredictable element of surprise that springs upon us?</p></li>
                 </ul>
                 <p>This is what we wish to find out !</p>
                 <p>Come, join us as we bring to the stage, eminent speakers from diverse backgrounds to help decipher the answer to the long standing question that has baffled man for centuries!</p>
@@ -81,34 +99,37 @@
         </div>
     </div>
 
-        <div class="footer-outer">
-            <div class="footer container">
-                <div class="tedxmec-footer">
-                    <img class="tedx-x" src="imgs/tedx-x.png" alt="tedxfooter">
-                    <img class="tedxpolicy" src="imgs/tedx.png" alt="tedxpolicy">
-                </div>
-                <div class="connect-footer">
-                    <ul>
-                        <li class="head">Connect</li>
-                        <li>Google Plus</li>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                    </ul>
-                </div>
-                <div class="mec-footer">
-                    <ul>
-                        <li class="head">TEDx MEC</li>
-                        <li>About TEDxMEC</li>
-                        <li>Our Team</li>
-                        <li>Partners</li>
-                    </ul>
-                </div>
+        </div>
+
+    <div class="footer-outer">
+        <div class="footer container">
+            <div class="tedxmec-footer">
+                <img class="tedx-x" src="imgs/tedx-x.png" alt="tedxfooter">
+                <img class="tedxpolicy" src="imgs/tedx.png" alt="tedxpolicy">
             </div>
-            <div class="copyrightlayer">
-                <p>Copyright &copy; TEDx MEC 2017</p>
+            <div class="connect-footer">
+                <ul>
+                    <li class="head">Connect</li>
+                    <li>Google Plus</li>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+            <div class="mec-footer">
+                <ul>
+                    <li class="head">TEDx MEC</li>
+                    <li>About TEDxMEC</li>
+                    <li>Our Team</li>
+                    <li>Partners</li>
+                </ul>
             </div>
         </div>
+        <div class="copyrightlayer">
+            <p>Copyright &copy; TEDx MEC 2017</p>
+        </div>
+    </div>
+
     </body>
-    <script src="/dist/build.js"></script>
+    <script src="build.js"></script>
 
 </html>
