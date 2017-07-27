@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -15,51 +16,13 @@
         </style>
     </head>
     <body>
-
-        <div class="page-head">
-            <div class="navbar">
-                <div>
-                    <ul>
-                        <li>Home</li>
-                        <li>Gallery</li>
-                        <li>Venue</li>
-                        <li>Previous Speakers</li>
-                        <li>About</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        {% include 'navbar.njk' %}
 
         {% block content %}
         {% endblock %}
 
-        <div class="footer-outer">
-            <div class="footer container">
-                <div class="tedxmec-footer">
-                    <img class="tedx-x" src="imgs/tedx-x.png" alt="tedxfooter">
-                    <img class="tedxpolicy" src="imgs/tedx.png" alt="tedxpolicy">
-                </div>
-                <div class="connect-footer">
-                    <ul>
-                        <li class="head">Connect</li>
-                        <li>Google Plus</li>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                    </ul>
-                </div>
-                <div class="mec-footer">
-                    <ul>
-                        <li class="head">TEDx MEC</li>
-                        <li>About TEDxMEC</li>
-                        <li>Our Team</li>
-                        <li>Partners</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyrightlayer">
-                <p>Copyright &copy; TEDx MEC 2017</p>
-            </div>
-        </div>
+        
+        {% include 'footer.njk' %}
     </body>
     <script src="/dist/build.js"></script>
 
