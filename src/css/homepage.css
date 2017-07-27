@@ -12,14 +12,13 @@
   top: 0;
   width: 100%;
   z-index: 99;
-  background-color: #f40000;
 }
-/* line 8, ../sass/partials/_headfoot.scss */
+/* line 7, ../sass/partials/_headfoot.scss */
 .navbar div {
   margin: auto;
   max-width: 980px;
 }
-/* line 11, ../sass/partials/_headfoot.scss */
+/* line 10, ../sass/partials/_headfoot.scss */
 .navbar div ul {
   padding: 20px 0;
   margin: 0;
@@ -29,13 +28,13 @@
   display: flex;
   justify-content: space-around;
 }
-/* line 20, ../sass/partials/_headfoot.scss */
+/* line 19, ../sass/partials/_headfoot.scss */
 .navbar div li {
   width: 20%;
   text-align: center;
 }
 
-/* line 27, ../sass/partials/_headfoot.scss */
+/* line 26, ../sass/partials/_headfoot.scss */
 .footer-outer {
   background-color: #373833;
 }
@@ -55,7 +54,7 @@
 
 /* line 42, ../sass/partials/_headfoot.scss */
 .footer {
-  margin-top: 50px;
+  margin: 0px auto;
   padding: 50px 10px;
   display: flex;
 }
@@ -130,6 +129,21 @@ p {
   font-size: 19px;
 }
 
+/* line 30, ../sass/partials/_theme.scss */
+.button-default {
+  background-color: #2363c3;
+  border: 0;
+  border-radius: 3px;
+  padding: 7px 15px;
+  color: white;
+  font-weight: bold;
+}
+
+/* line 39, ../sass/partials/_theme.scss */
+body {
+  position: relative;
+}
+
 /* line 5, ../sass/homepage.scss */
 p,
 h2,
@@ -145,7 +159,7 @@ ul {
 /* line 15, ../sass/homepage.scss */
 .carousel-container {
   padding: 50px 0;
-  background-image: url("../../dist/imgs/tedxback.jpg");
+  background-image: url("/dist/imgs/tedxback.jpg");
 }
 /* line 18, ../sass/homepage.scss */
 .carousel-container .carousel {
@@ -159,20 +173,29 @@ ul {
 }
 
 /* line 28, ../sass/homepage.scss */
+.cover {
+  height: 100vh;
+  background-image: url("/dist/imgs/cover.png");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+}
+
+/* line 36, ../sass/homepage.scss */
 .ted {
   text-align: center;
 }
-/* line 30, ../sass/homepage.scss */
+/* line 38, ../sass/homepage.scss */
 .ted p {
   width: 80%;
   margin: auto;
 }
 
-/* line 36, ../sass/homepage.scss */
+/* line 44, ../sass/homepage.scss */
 .tedx {
   position: relative;
 }
-/* line 39, ../sass/homepage.scss */
+/* line 47, ../sass/homepage.scss */
 .tedx h2,
 .tedx p {
   width: 65%;
@@ -180,7 +203,7 @@ ul {
   box-sizing: border-box;
   text-align: center;
 }
-/* line 46, ../sass/homepage.scss */
+/* line 54, ../sass/homepage.scss */
 .tedx img {
   width: 35%;
   position: absolute;
@@ -189,8 +212,49 @@ ul {
   transform: translateY(-50%);
 }
 
-/* line 56, ../sass/homepage.scss */
-.tedxmec .para-head::after {
+/* line 63, ../sass/homepage.scss */
+.tedxmec-container {
+  display: flex;
+  justify-content: space-around;
+}
+/* line 67, ../sass/homepage.scss */
+.tedxmec-container .x-png {
+  width: 46%;
+  background-image: url("/dist/imgs/college.jpg");
+  background-size: contain;
+  background-position: center;
+  background-color: #a10015;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: auto;
+}
+/* line 76, ../sass/homepage.scss */
+.tedxmec-container .x-png img {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+/* line 82, ../sass/homepage.scss */
+.tedxmec-container .tedxmec {
+  width: 50%;
+}
+/* line 84, ../sass/homepage.scss */
+.tedxmec-container .tedxmec .para-head::after {
   left: 0;
   transform: none;
+}
+
+/* line 91, ../sass/homepage.scss */
+.theme-container {
+  margin-bottom: 0;
+  background-color: #373833;
+  color: white;
+  padding: 40px;
+}
+/* line 97, ../sass/homepage.scss */
+.theme-container .mec-theme .bold-head {
+  color: #bf3642;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 50px;
 }

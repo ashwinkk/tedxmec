@@ -1,0 +1,63 @@
+@import 'partials/_base';
+@import 'partials/normalise.css';
+@import 'partials/headfoot';
+@import 'partials/theme';
+
+body {
+	background: #faf9f9;
+}
+
+.venue-container {
+	overflow: none;
+	padding: 0;
+	border-radius: 5px;
+	margin-top: 0;
+	.modes {
+		$color: #8cabd9;
+		margin-top: 50px;
+		text-align: center;
+		justify-content: space-around;
+		div {
+			text-align: justify;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+			text-align-last: center;
+			padding: 5px 25px;
+			margin-top: 25px;
+			background-color: #fff;
+			img {
+				width: 30%;
+				margin: 30px auto 10px auto;
+				display: block;
+				padding: 5px 10px;
+			}
+			.directions {
+				color: #ff1300;
+				margin: 20px auto;
+				text-decoration: none;
+				border: 1px solid #eda8a2;
+				display: block;
+				width: 60%;
+				font-size: 16px;
+				border-radius: 5px;
+				padding: 12px 0px;
+			}
+		}
+	}
+}
+
+#map {
+	width: 100%;
+	border-radius: 5px;
+	overflow: none;
+	height: 400px !important;
+}
+
+h3 {
+	font-weight: bolder;
+}
+.container {
+	p {
+		font-size: 14px;
+		text-align: justify;
+	}
+}

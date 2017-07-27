@@ -1,0 +1,31 @@
+@import 'partials/_base.scss';
+@import 'partials/_theme.scss';
+@import 'partials/_headfoot.scss';
+@import 'partials/normalise.scss';
+
+p {
+	font-size: 15px;
+}
+
+.cover {
+	margin: 0px;
+	padding: 0px !important;
+	img {
+		width: 100%;
+	}
+}
+
+.about {
+	h2 {
+		text-align: center;
+		margin: 30px 0px;
+	}
+	span {
+		color: #ff1e00;
+		font-weight: bolder;
+	}
+	p {
+		text-align: justify;
+	}
+	margin-top: 50px;
+}

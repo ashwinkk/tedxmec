@@ -1,0 +1,211 @@
+@import url(partials/normalise.css);
+/* line 1, ../sass/partials/_base.scss */
+.container {
+  max-width: 980px;
+  margin: 90px auto;
+}
+
+/* line 1, ../sass/partials/_headfoot.scss */
+.navbar {
+  text-align: center;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+/* line 7, ../sass/partials/_headfoot.scss */
+.navbar div {
+  margin: auto;
+  max-width: 980px;
+}
+/* line 10, ../sass/partials/_headfoot.scss */
+.navbar div ul {
+  padding: 20px 0;
+  margin: 0;
+  font-size: 15px;
+  list-style-type: none;
+  font-family: "Bree Serif", serif;
+  display: flex;
+  justify-content: space-around;
+}
+/* line 19, ../sass/partials/_headfoot.scss */
+.navbar div li {
+  width: 20%;
+  text-align: center;
+}
+
+/* line 26, ../sass/partials/_headfoot.scss */
+.footer-outer {
+  background-color: #373833;
+}
+/* line 29, ../sass/partials/_headfoot.scss */
+.footer-outer .copyrightlayer {
+  padding: 20px 0;
+  background-color: #232323;
+  text-align: center;
+  box-shadow: inset 0px 0px 3px;
+}
+/* line 34, ../sass/partials/_headfoot.scss */
+.footer-outer .copyrightlayer p {
+  color: #989898;
+  margin: 0;
+  font-size: 12px;
+}
+
+/* line 42, ../sass/partials/_headfoot.scss */
+.footer {
+  margin: 0px auto;
+  padding: 50px 10px;
+  display: flex;
+}
+/* line 46, ../sass/partials/_headfoot.scss */
+.footer * {
+  margin: 0 10px;
+}
+/* line 49, ../sass/partials/_headfoot.scss */
+.footer img {
+  display: inline-block;
+  margin: 0 10px;
+}
+/* line 53, ../sass/partials/_headfoot.scss */
+.footer img.tedx-x {
+  height: 200px;
+}
+/* line 56, ../sass/partials/_headfoot.scss */
+.footer img.tedxpolicy {
+  vertical-align: top;
+  width: 250px;
+}
+/* line 60, ../sass/partials/_headfoot.scss */
+.footer ul {
+  color: beige;
+  list-style-type: none;
+  padding: 0;
+}
+/* line 64, ../sass/partials/_headfoot.scss */
+.footer ul li {
+  margin-top: 10px;
+  color: #b5b7ad;
+}
+/* line 68, ../sass/partials/_headfoot.scss */
+.footer ul li.head {
+  font-weight: bolder;
+  font-size: 19px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #f5eeee;
+}
+
+/* line 1, ../sass/partials/_theme.scss */
+.para-head {
+  position: relative;
+  margin-bottom: 22px;
+  font-size: 30px;
+}
+/* line 5, ../sass/partials/_theme.scss */
+.para-head::after {
+  content: ' ';
+  position: absolute;
+  height: 2px;
+  width: 20%;
+  bottom: -10px;
+  background-color: red;
+  left: 50%;
+  transform: translateX(-50%);
+  clear: both;
+}
+
+/* line 18, ../sass/partials/_theme.scss */
+.style-rule {
+  float: center;
+  border-top: 1px solid #8c8b8b;
+  border-bottom: 1px solid #fff;
+  margin: 0;
+}
+
+/* line 25, ../sass/partials/_theme.scss */
+p {
+  line-height: 27px;
+  font-size: 19px;
+}
+
+/* line 30, ../sass/partials/_theme.scss */
+.button-default {
+  background-color: #2363c3;
+  border: 0;
+  border-radius: 3px;
+  padding: 7px 15px;
+  color: white;
+  font-weight: bold;
+}
+
+/* line 39, ../sass/partials/_theme.scss */
+body {
+  position: relative;
+}
+
+/* line 6, ../sass/venue.scss */
+body {
+  background: #faf9f9;
+}
+
+/* line 10, ../sass/venue.scss */
+.venue-container {
+  overflow: none;
+  padding: 0;
+  border-radius: 5px;
+  margin-top: 0;
+}
+/* line 15, ../sass/venue.scss */
+.venue-container .modes {
+  margin-top: 50px;
+  text-align: center;
+  justify-content: space-around;
+}
+/* line 20, ../sass/venue.scss */
+.venue-container .modes div {
+  text-align: justify;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  text-align-last: center;
+  padding: 5px 25px;
+  margin-top: 25px;
+  background-color: #fff;
+}
+/* line 27, ../sass/venue.scss */
+.venue-container .modes div img {
+  width: 30%;
+  margin: 30px auto 10px auto;
+  display: block;
+  padding: 5px 10px;
+}
+/* line 33, ../sass/venue.scss */
+.venue-container .modes div .directions {
+  color: #ff1300;
+  margin: 20px auto;
+  text-decoration: none;
+  border: 1px solid #eda8a2;
+  display: block;
+  width: 60%;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 12px 0px;
+}
+
+/* line 48, ../sass/venue.scss */
+#map {
+  width: 100%;
+  border-radius: 5px;
+  overflow: none;
+  height: 400px !important;
+}
+
+/* line 55, ../sass/venue.scss */
+h3 {
+  font-weight: bolder;
+}
+
+/* line 59, ../sass/venue.scss */
+.container p {
+  font-size: 14px;
+  text-align: justify;
+}

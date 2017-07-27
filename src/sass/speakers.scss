@@ -1,0 +1,101 @@
+@import 'partials/_base';
+@import 'partials/normalise';
+@import 'partials/_headfoot';
+@import 'partials/_theme';
+
+.speaker-container {
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	.speaker {
+		width: 100%;
+	}
+	.speaker-name {
+		margin: 20px 0px;
+	}
+	.speaker-overlay {
+		top: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		position: absolute;
+		background-color: rgba(255, 255, 255, 0.95);
+		transition: opacity 0.3s;
+		left: 0;
+		.speaker-overlay-desc {
+			padding: 30px;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			p {
+				font-size: 15px;
+				line-height: 24px;
+				text-align: justify;
+				text-align-last: center;
+			}
+		}
+	}
+	&:hover {
+		.speaker-overlay {
+			opacity: 1;
+		}
+	}
+}
+
+.modal-container {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	transition: opacity 0.4s 0.2s, z-index 0.3s 0.2s;
+	.speaker-modal {
+		max-width: 980px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin: auto;
+		background-color: white;
+		box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5),
+			-1px -1px 15px rgba(0, 0, 0, 0.5);
+		#modal-inner {
+			padding: 30px;
+			.modal-image {
+				padding-left: 0;
+			}
+			.modal-para {
+				font-size: 15px;
+				line-height: 30px;
+				text-align: justify;
+				text-align-last: center;
+			}
+			.modal-head {
+				margin-top: 0;
+			}
+		}
+		#close-modal {
+			width: 100%;
+			border: 0;
+			padding: 10px;
+			&:focus {
+				outline: 0;
+			}
+			&:active {
+				background: red;
+			}
+		}
+	}
+}
+div.active-modal {
+	opacity: 1;
+	z-index: 99;
+}

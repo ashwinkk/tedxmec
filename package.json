@@ -15,7 +15,8 @@
     "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-cssmin": "^2.2.0",
     "grunt-contrib-uglify": "^3.0.1",
-    "grunt-contrib-watch": "^1.0.0"
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-render-nunjucks": "^0.2.0"
   },
   "dependencies": {
     "underscore.string": "^3.3.4",

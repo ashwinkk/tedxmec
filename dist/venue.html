@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>TEDxMEC 2017</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif|PT+Sans" rel="stylesheet">
+
+<link rel="stylesheet" href="../src/css/venue.css">
+
+        <style>
+
+#map {
+    height: 100%;
+    }
+    /* Optional: Makes the sample page fill the window. */
+    html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="page-head">
+            <div class="navbar">
+                <div>
+                    <ul>
+                        <li>Home</li>
+                        <li>Gallery</li>
+                        <li>Venue</li>
+                        <li>Previous Speakers</li>
+                        <li>About</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    <div class="venue-container container">
+        <div id="map"></div>
+        <div class="modes row">
+            <div class="col-md-offset-1 col-md-4 col-xs-12">
+                <img src="/dist/imgs/modes/car.png">
+                <h3 class="road">Road</h3>
+                <p>Kochi is well connected by road by 3 national highways and numerous other routes. Bus services are available from almost all major cities in Kerala, Tamil nadu and Karnataka. MEC is located 4 km from Edappally toll Jn on NH-47 and NH-17. Private and KSRTC bus stations are within 10km of the college.</p>
+                <a target="_blank" href="#" class="directions">Get Directions</a>
+            </div>
+            <div class="col-md-offset-2 col-md-4 col-xs-12">
+                <img src="/dist/imgs/modes/train.png">
+                <h3>Rail</h3>
+                <p>Ernakulam is a major railway destination with trains running to all parts of the country. MEC is located 6 km from Ernakulam North Railway station, 10 km from Ernakulam South Railway station and 15 km from Aluva Railway Station.</p>
+                <a target="_blank" href="#" class="directions">Get Directions</a>
+            </div>
+        </div>
+        <div class="modes row">
+            <div class="col-md-offset-4 col-md-4 col-xs-12">
+                <img src="/dist/imgs/modes/air.png">
+                <h3>Air</h3>
+                <p>Kochi has an international airport connected by major aircraft operators. MEC is located 20 km from the Cochin International Airport along NH-47.</p>
+                <a target="_blank" href="#" class="directions">Get Directions</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h3>Within</h3>
+        <p>MEC can be reached from Edapally through buses along the Pookatupadi, Perumbavoor or Kothamangalam routes, disembarking at the Thrikkakkara temple bus stop. The college is about 1km from the bus stop.</p>
+        <p>It can also be reached from Kaloor Bus Stand or Ernakulam South and Ernakulam North railway stations by taking buses along the Kakkanad route to disembark at NGO quarters, located 1.5 km from MEC. Autorikshaws are available from both Thrikkakara and NGO quarters.</p>
+    </div>
+    <script>
+        var map;
+        function initMap() {
+
+        var myLatLng = {lat: 10.0281967, lng: 76.3292422};
+
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: myLatLng,
+            zoom: 17
+        });
+
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Hello World!'
+        });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASuag7lvuXRCvnbG9thsUdkXiGkPWtzV0&callback=initMap"
+        async defer></script>
+
+        <div class="footer-outer">
+            <div class="footer container">
+                <div class="tedxmec-footer">
+                    <img class="tedx-x" src="imgs/tedx-x.png" alt="tedxfooter">
+                    <img class="tedxpolicy" src="imgs/tedx.png" alt="tedxpolicy">
+                </div>
+                <div class="connect-footer">
+                    <ul>
+                        <li class="head">Connect</li>
+                        <li>Google Plus</li>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+                <div class="mec-footer">
+                    <ul>
+                        <li class="head">TEDx MEC</li>
+                        <li>About TEDxMEC</li>
+                        <li>Our Team</li>
+                        <li>Partners</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyrightlayer">
+                <p>Copyright &copy; TEDx MEC 2017</p>
+            </div>
+        </div>
+    </body>
+    <script src="/dist/build.js"></script>
+
+</html>

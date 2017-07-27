@@ -1,38 +1,10 @@
-<!DOCTYPE html>
-<html>
+{% extends '../partials/page.njk' %}
 
-<head>
-    <meta charset="utf-8">
-    <title>TEDxMEC 2017</title>
-    <link rel="stylesheet" href="src/css/homepage.css">
-    <link rel="stylesheet" type="text/css" href="src/css/slick.css" />
-    <link rel="stylesheet" type="text/css" href="src/css/slick-theme.css" />
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|PT+Sans" rel="stylesheet">
-</head>
+{% block stylesheets %}
+    <link rel="stylesheet" href="/src/css/homepage.css">
+{% endblock %}
 
-<body>
-    <div class="page-head">
-        <div class="navbar">
-            <div>
-                <ul>
-                    <li>Home</li>
-                    <li>Gallery</li>
-                    <li>Venue</li>
-                    <li>Previous Speakers</li>
-                    <li>About</li>
-                </ul>
-            </div>
-        </div>
-        <hr class="style-rule">
-        <div class="carousel-container">
-            <div class="carousel">
-                <div><img src="dist/imgs/tedx.jpg"></div>
-                <div><img src="dist/imgs/tedx.jpg"></div>
-                <div><img src="dist/imgs/tedx.jpg"></div>
-                <div><img src="dist/imgs/tedx.jpg"></div>
-            </div>
-        </div>
-    </div>
+{% block content %}
     <div class="container">
         <div class="ted">
             <h2 class="para-head">TED</h2>
@@ -41,56 +13,46 @@
             <p>TED is a media organization devoted to spreading ideas. Owing to its Silicon Valley origins TED's early emphasis was on technology, entertainment and design,but it has since broadened its focus to include talks on many scientific, cultural, humanitarian and academic topics. Each Ted talk is given by an expert in their particular field. Past speakers include  Bill Clinton,  Al Gore, Gordon Brown, David Cameron, Billy Graham, Richard Dawkins, Bill Gates, Bono, Google founders Larry Page and Sergey Brin, and many Nobel Prize winners.</p>
         </div>
     </div>
+
+    <h1>
+  <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Si.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
+    <span class="wrap"></span>
+  </a>
+</h1>
     <div class="container">
         <div class="tedx">
             <h2 class="para-head">TEDx</h2>
-            <img src="dist/imgs/tedxinfo.png">
+            <img src="/dist/imgs/tedxinfo.png">
             <p>TEDx is a group of local, self-organized events that bring people together to share a TED-like experience. These events are hyperlocal and take up issues that are relevant to the hosting community and are free from corporate, religious and political agenda. Each event is branded as a TEDx, where the x = independently organized TED event. At every TEDx event, TEDTalks videos and live speakers combine to spark deep discussion and meaningful connections within the audience. Every TEDx conference remains true to the core philosophy of TED and celebrates Ideas worth spreading.</p>
         </div>
     </div>
-    <div class="container">
+    <div class="container tedxmec-container">
+        <div class="x-png">
+            <img src="/dist/imgs/cutout.png" />
+        </div>
         <div class="tedxmec">
             <h2 class="para-head">TEDxMEC</h2>
             <p>TEDxMEC is an independently organised TEDx conference which seeks to clone the  TED experience at MEC. TEDxMEC has seen various speakers from all walks of life share their stories of greatness, fail hiure, pain,motivation, perseverance, discipline, courage and compassion.</p>
             <p>We aim to create a platform where people can share and express ideas and reflect positive changes in themselves and to the society as a whole.  A sound mind is essential to appreciate the well thought out idea, and at TEDxMEC we have no shortage of that!. Our audience consists of the best and brightest students from around Kerala and of enlightened natives in and around Kochi. Rest assured we have no doubts in our hearts that TEDxMEC will bring about positive changes in the lives of our audience and to the society at large.</p>
         </div>
     </div>
-    <div class="footer-outer">
-        <div class="footer container">
-            <div class="tedxmec-footer">
-                <img class="tedx-x" src="dist/imgs/tedx-x.jpg" alt="tedxfooter">
-                <img class="tedxpolicy" src="dist/imgs/tedx.png" alt="tedxpolicy">
-            </div>
-            <div class="connect-footer">
+    <div class="theme-container">
+        <div class="container" style="margin-bottom:0;margin-top:0;">
+            <div class="mec-theme">
+                <h2 class="bold-head">THEME</h2>
+                <p>Since the dawn of time mankind has always wished to manipulate time and predict the future. This fantasy has permeated our movies, comics and deepest desires.</p>
+                <p>So what is it that makes the unknown future oh so mysterious?</p>
                 <ul>
-                    <li class="head">Connect</li>
-                    <li>Google Plus</li>
-                    <li>Facebook</li>
-                    <li>Twitter</li>
+                    <li>The hard struggles and choices that we make?</li>
+                    <li>The societal pressure that we succumb to?</li>
+                    <li>The responsibilities that we partake?</li>
+                    <li>Or is  it the unpredictable element of surprise that springs upon us?</li>
                 </ul>
+                <p>This is what we wish to find out !</p>
+                <p>Come, join us as we bring to the stage, eminent speakers from diverse backgrounds to help decipher the answer to the long standing question that has baffled man for centuries!</p>
+                <p>TEDxMEC 2017 will explore the possibilities of of the future and what lies ahead of us. Four speakers will examine 4 different dimensions of this question, relevant to charting the course of our lives.</p>
+                <p>What comes tomorrow” aspires to bring in a whole new set of captivating ideas and motivational stories so as to fill our audience with hope to embrace tomorrow with open arms.</p>
             </div>
-            <div class="mec-footer">
-                <ul>
-                    <li class="head">TEDx MEC</li>
-                    <li>About TEDxMEC</li>
-                    <li>Our Team</li>
-                    <li>Partners</li>
-                </ul>
-            </div>
-        </div>
-        <div class="copyrightlayer">
-            <p>Copyright &copy; TEDx MEC 2017</p>
         </div>
     </div>
-</body>
-<script src="dist/build.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-<script>
-    $('.carousel').slick({
-        arrows: false,
-        dots: true,
-        auto: true
-    });
-</script>
-
-</html>
+{% endblock %}

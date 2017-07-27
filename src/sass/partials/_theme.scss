@@ -1,28 +1,41 @@
 .para-head {
-    position: relative;
-    margin-bottom: 22px;
-    font-size: 30px;
-    &::after {
-        content: ' ';
-        position: absolute;
-        height: 2px;
-        width: 20%;
-        bottom: -10px;
-        background-color: red;
-        left: 50%;
-        transform: translateX(-50%);
-        clear: both;
-    }
+	position: relative;
+	margin-bottom: 22px;
+	font-size: 30px;
+	&::after {
+		content: ' ';
+		position: absolute;
+		height: 2px;
+		width: 20%;
+		bottom: -10px;
+		background-color: red;
+		left: 50%;
+		transform: translateX(-50%);
+		clear: both;
+	}
 }
 
 .style-rule {
-    float: center;
-    border-top: 1px solid #8c8b8b;
-    border-bottom: 1px solid #fff;
-    margin: 0;
+	float: center;
+	border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #fff;
+	margin: 0;
 }
 
 p {
-    line-height: 27px;
-    font-size: 19px;
+	line-height: 27px;
+	font-size: 19px;
+}
+
+.button-default {
+	background-color: #2363c3;
+	border: 0;
+	border-radius: 3px;
+	padding: 7px 15px;
+	color: white;
+	font-weight: bold;
+}
+
+body {
+	position: relative;
 }
