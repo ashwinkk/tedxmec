@@ -3,9 +3,22 @@
 @import 'partials/headfoot';
 @import 'partials/theme';
 p,
-h2,
 ul {
 	font-family: $contentFont;
+}
+
+h2 {
+	font-family: $navbarFont;
+}
+
+#navhom {
+	color: #e62b1e;
+}
+#navgal,
+#navven,
+#navspe,
+#navabt {
+	color: black;
 }
 
 .cover {
@@ -114,10 +127,11 @@ ul {
 
 .theme-container {
 	margin-bottom: 0;
-
+	p {
+		color: white;
+	}
 	background-color: #373833;
 	background-repeat: repeat;
-	color: white;
 	padding: 40px;
 	.mec-theme {
 		.bold-head {
@@ -125,6 +139,14 @@ ul {
 			text-align: center;
 			font-weight: bolder;
 			font-size: 50px;
+		}
+		ul {
+			color: #bf3642;
+			li {
+				p {
+					color: white;
+				}
+			}
 		}
 	}
 	@media (max-width: $phoneMax) {
@@ -136,7 +158,6 @@ ul {
 			}
 			ul {
 				font-size: 15px;
-				color: #bf3642;
 				li {
 					p {
 						color: white;

@@ -15,6 +15,10 @@ var currIndex = -1;
 $(document).ready(function() {
 	$(".gallery-image").click(handleImgClick);
 	$("#close-window").click(handleImgClose);
+	$("body").keydown(function(e) {
+		if (e.which == 37) prevImage();
+		if (e.which == 39) nextImage();
+	});
 	$("#next").click(nextImage);
 	$("#prev").click(prevImage);
 	console.log(galleryImages.reverse());
@@ -35,7 +39,6 @@ function handleImgClose(e) {
 }
 
 function nextImage(e) {
-	console.log(currIndex);
 	if (currIndex >= 0) {
 		currIndex++;
 		if (currIndex == galleryImages.length) currIndex = 0;
@@ -44,7 +47,6 @@ function nextImage(e) {
 }
 
 function prevImage(e) {
-	console.log(currIndex);
 	if (currIndex >= 0) {
 		currIndex--;
 		if (currIndex == -1) currIndex = galleryImages.length - 1;

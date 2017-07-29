@@ -3,6 +3,16 @@
 @import 'partials/_headfoot';
 @import 'partials/_theme';
 
+#navspe {
+	color: #e62b1e;
+}
+#navhom,
+#navven,
+#navabt,
+#navgal {
+	color: black;
+}
+
 .speaker-container {
 	padding: 10px;
 	box-sizing: border-box;
@@ -11,6 +21,7 @@
 	position: relative;
 	z-index: 1;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	margin-bottom: 20px;
 	.speaker {
 		width: 100%;
 	}
@@ -89,14 +100,12 @@
 			}
 		}
 		#close-modal {
-			width: 100%;
-			border: 0;
-			padding: 20px;
-			&:focus {
-				outline: 0;
-			}
-			&:active {
-				background: red;
+			float: right;
+			padding: 20px 30px;
+			font-size: 30px;
+			cursor: pointer;
+			@media (max-width: $phoneMax) {
+				padding: 5px 30px;
 			}
 		}
 	}

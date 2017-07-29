@@ -1,9 +1,10 @@
+@import 'compass/css3/filter';
 .container {
 	max-width: 980px;
 	margin: 90px auto;
 }
 
-$contentFont: 'PT Sans', sans-serif;
+$contentFont: 'Poppins', sans-serif;
 $navbarFont: 'Montserrat', sans-serif;
 
 $phoneMax: 600px;
@@ -22,5 +23,10 @@ a:active {
 
 #content,
 #footer-outer {
+	will-change: filter;
 	transition: filter 0.3s;
+}
+
+.filter-transit {
+	@include filter(blur(5px));
 }

@@ -3,6 +3,16 @@
 @import 'partials/_headfoot';
 @import 'partials/_theme';
 
+#navgal {
+	color: #e62b1e;
+}
+#navhom,
+#navven,
+#navspe,
+#navabt {
+	color: black;
+}
+
 .img-container {
 	img.gallery-image {
 		width: 100%;
@@ -56,6 +66,6 @@
 }
 
 .active-window {
-	z-index: 99 !important;
+	z-index: 109 !important;
 	opacity: 1 !important;
 }

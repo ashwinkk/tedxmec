@@ -3,14 +3,26 @@
 @import 'partials/_headfoot.scss';
 @import 'partials/normalise.scss';
 
+#navabt {
+	color: #e62b1e;
+}
+#navhom,
+#navven,
+#navspe,
+#navgal {
+	color: black;
+}
+
 .cover {
 	margin: 0px;
 	padding: 0px !important;
 	width: 100% !important;
 	max-width: unset;
-	margin-top: 81px;
 	img {
 		width: 100%;
+	}
+	@media (max-width: $phoneMax) {
+		margin-top: 81px;
 	}
 }
 
@@ -26,5 +38,5 @@
 	p {
 		text-align: justify;
 	}
-	margin-top: 50px;
+	margin-top: -25px;
 }
