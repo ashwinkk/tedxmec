@@ -16,7 +16,10 @@ module.exports = function(grunt) {
 		uglify: {
 			js: {
 				files: {
-					"dist/build.min.js": ["dist/build.js"]
+					"dist/js/index.min.js": ["src/js/index.js", "src/js/navbar.js"],
+					"dist/js/speakers.min.js": ["src/js/speakers.js", "src/js/navbar.js"],
+					"dist/js/gallery.min.js": ["src/js/xgallery.js", "src/js/navbar.js"],
+					"dist/js/jquery.min.js": ["src/js/jquery.js"]
 				}
 			}
 		},
@@ -27,7 +30,11 @@ module.exports = function(grunt) {
 			},
 			target: {
 				files: {
-					"dist/build.min.css": ["dist/build.css"]
+					"dist/css/about.min.css": ["src/css/about.css"],
+					"dist/css/gallery.min.css": ["src/css/gallery.css"],
+					"dist/css/homepage.min.css": ["src/css/homepage.css"],
+					"dist/css/speakers.min.css": ["src/css/speakers.css"],
+					"dist/css/style.min.css": ["src/css/style.css"]
 				}
 			}
 		},
@@ -100,6 +107,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks("grunt-contrib-watch");
 	grunt.loadNpmTasks("grunt-contrib-connect");
 	grunt.loadNpmTasks("grunt-render-nunjucks");
+	grunt.loadNpmTasks("grunt-contrib-cssmin");
 	grunt.registerTask("default", [
 		"connect",
 		"compass",
@@ -107,4 +115,5 @@ module.exports = function(grunt) {
 		"renderNunjucks",
 		"watch"
 	]);
+	grunt.registerTask("build", ["uglify:js", "cssmin", "renderNunjucks"]);
 };

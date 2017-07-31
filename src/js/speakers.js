@@ -1,7 +1,11 @@
 var baseData;
 fetch("/src/data.json")
-	.then(resp => resp.json())
-	.then(data => (baseData = data));
+	.then(function(resp) {
+		resp.json();
+	})
+	.then(function(data) {
+		baseData = data;
+	});
 $(document).ready(function() {
 	$(".detail-view").click(handleModel);
 	$("#close-modal").click(handleClose);
