@@ -34,7 +34,8 @@ module.exports = function(grunt) {
 					"dist/css/gallery.min.css": ["src/css/gallery.css"],
 					"dist/css/homepage.min.css": ["src/css/homepage.css"],
 					"dist/css/speakers.min.css": ["src/css/speakers.css"],
-					"dist/css/style.min.css": ["src/css/style.css"]
+					"dist/css/style.min.css": ["src/css/style.css"],
+					"dist/css/venue.min.css": ["src/css/venue.css"]
 				}
 			}
 		},
@@ -108,12 +109,13 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks("grunt-contrib-connect");
 	grunt.loadNpmTasks("grunt-render-nunjucks");
 	grunt.loadNpmTasks("grunt-contrib-cssmin");
+	grunt.registerTask("build", ["uglify:js", "cssmin", "renderNunjucks"]);
 	grunt.registerTask("default", [
 		"connect",
 		"compass",
 		"concat",
 		"renderNunjucks",
+		"build",
 		"watch"
 	]);
-	grunt.registerTask("build", ["uglify:js", "cssmin", "renderNunjucks"]);
 };

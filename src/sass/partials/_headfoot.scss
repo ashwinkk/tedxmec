@@ -3,7 +3,6 @@
 	position: relative;
 	top: 0;
 	width: 100%;
-	z-index: 99;
 	height: 80px;
 	& > div {
 		margin: auto;
@@ -56,6 +55,9 @@
 	@media (max-width: $phoneMax) {
 		position: fixed;
 		background: white;
+	}
+	@media (max-width: $ipad) {
+		z-index: 99;
 	}
 }
 
