@@ -30,3 +30,13 @@ a:active {
 .filter-transit {
 	@include filter(blur(5px));
 }
+
+#content {
+	position: relative;
+}
+
+@media (max-width: $phoneMax) {
+	.container {
+		margin: 50px auto;
+	}
+}

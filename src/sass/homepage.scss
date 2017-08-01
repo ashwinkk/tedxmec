@@ -6,6 +6,9 @@ p,
 ul {
 	font-family: $contentFont;
 }
+p {
+	text-align: justify;
+}
 
 h2 {
 	font-family: $navbarFont;
@@ -21,12 +24,30 @@ h2 {
 	color: black;
 }
 
-.cover {
-	height: 100vh;
+.homeland {
+	height: 500px;
+	position: relative;
 	background-image: url("../imgs/cover.png");
-	background-size: cover;
-	background-repeat: repeat-x;
+	background-size: contain;
 	background-position: center;
+	margin: 0 auto;
+	.typewriter {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		a {
+			color: #a10015;
+		}
+		@media (max-width: $phoneMax) {
+			a {
+				font-size: 10px;
+			}
+		}
+	}
+	@media (max-width: $phoneMax) {
+		height: 400px;
+	}
 }
 
 .ted {
@@ -39,7 +60,6 @@ h2 {
 		p {
 			width: 90%;
 			text-align: justify;
-			text-align-last: center;
 		}
 	}
 }
@@ -53,6 +73,9 @@ h2 {
 		padding: 5px 30px;
 		box-sizing: border-box;
 		text-align: center;
+	}
+	p {
+		text-align: justify;
 	}
 	img {
 		width: $imageWidth;
@@ -68,7 +91,6 @@ h2 {
 			padding: 0;
 			margin: auto;
 			text-align: justify;
-			text-align-last: center;
 		}
 		img {
 			position: static;
@@ -119,7 +141,6 @@ h2 {
 			width: 90%;
 			p {
 				text-align: justify;
-				text-align-last: center;
 			}
 		}
 	}

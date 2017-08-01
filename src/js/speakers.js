@@ -195,6 +195,7 @@ function handleModel(e) {
 	modalContainer.classList.add("active-modal");
 	var modal = document.getElementById("modal-inner");
 	if (window.innerWidth < 700) $("body").addClass("stay");
+	else $("#content").css({ "z-index": "99" });
 	modal.children[0].src = speakerDetail.url;
 	modal.children[1].innerHTML = speakerDetail.name;
 	modal.children[2].innerHTML = speakerDetail.description;
@@ -204,6 +205,10 @@ function handleClose() {
 	console.log("something");
 	$("body").removeClass("stay");
 	document.getElementById("modal-container").classList.remove("active-modal");
+	setTimeout(function() {
+		$("#content").css({ "z-index": "" });
+	}, 500);
+
 	var modal = document.getElementById("modal-inner");
 	setTimeout(function() {
 		modal.children[0].src = "";

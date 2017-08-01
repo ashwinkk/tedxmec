@@ -29,13 +29,16 @@ function handleImgClick(e) {
 	$("#window").attr("src", img.src);
 	console.log(img.src);
 	var url = new URL(img.src);
-	console.log(galleryImages.indexOf(url.pathname));
 	currIndex = galleryImages.indexOf(url.pathname);
+	$("#content").css({ "z-index": "99" });
 	$("#window-container").addClass("active-window");
 }
 
 function handleImgClose(e) {
 	$("#window-container").removeClass("active-window");
+	setTimeout(function() {
+		$("#content").css({ "z-index": "" });
+	}, 500);
 }
 
 function nextImage(e) {

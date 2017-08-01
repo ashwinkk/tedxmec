@@ -55,14 +55,14 @@ module.exports = function(grunt) {
 			},
 			scripts: {
 				files: "src/js/*.js",
-				tasks: ["concat:js"],
+				tasks: ["concat:js", "uglify:js"],
 				options: {
 					event: ["all"]
 				}
 			},
 			css: {
 				files: "src/sass/**/*.scss",
-				tasks: ["compass"],
+				tasks: ["compass", "cssmin"],
 				options: {
 					event: ["all"]
 				}
