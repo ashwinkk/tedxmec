@@ -19,7 +19,8 @@ module.exports = function(grunt) {
 					"dist/js/index.min.js": ["src/js/index.js", "src/js/navbar.js"],
 					"dist/js/speakers.min.js": ["src/js/speakers.js", "src/js/navbar.js"],
 					"dist/js/gallery.min.js": ["src/js/xgallery.js", "src/js/navbar.js"],
-					"dist/js/jquery.min.js": ["src/js/jquery.js"]
+					"dist/js/jquery.min.js": ["src/js/jquery.js"],
+					"dist/js/navbar.min.js": ["src/js/navbar.js"]
 				}
 			}
 		},
@@ -35,7 +36,9 @@ module.exports = function(grunt) {
 					"dist/css/homepage.min.css": ["src/css/homepage.css"],
 					"dist/css/speakers.min.css": ["src/css/speakers.css"],
 					"dist/css/style.min.css": ["src/css/style.css"],
-					"dist/css/venue.min.css": ["src/css/venue.css"]
+					"dist/css/venue.min.css": ["src/css/venue.css"],
+					"dist/css/team.min.css": ["src/css/team.css"],
+					"dist/css/contact.min.css": ["src/css/contact.css"]
 				}
 			}
 		},

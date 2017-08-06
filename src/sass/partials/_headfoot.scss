@@ -17,12 +17,15 @@
 			display: none;
 			margin: auto 10px;
 		}
-		img {
+		.img-link {
 			height: 40%;
 			margin: auto 10px;
 			@media (max-width: $phoneMax) {
 				height: 30%;
 			}
+		}
+		img {
+			height: 100%;
 		}
 		ul {
 			padding: 20px 0;
@@ -78,8 +81,11 @@
 	width: 100%;
 	height: calc(100% - 80px);
 	@media (max-width: $phoneMax) {
+		.menu-list {
+			margin-top: 20px;
+		}
 		h2 {
-			color: slategray;
+			color: black;
 			font-weight: bolder;
 		}
 		div {
@@ -87,8 +93,16 @@
 			div {
 				font-size: 15px;
 				padding: 10px;
+				img {
+					width: 50px;
+					margin: auto;
+					display: block;
+				}
 				a {
-					color: black;
+					color: white;
+				}
+				p {
+					text-align: center;
 				}
 			}
 		}
@@ -129,6 +143,12 @@
 	background-color: #373833;
 	position: relative;
 	z-index: 1;
+	.event-footer {
+		color: #b5b7ad;
+		text-align: center;
+		font-size: 12px;
+		padding: 5px 10px;
+	}
 	.copyrightlayer {
 		padding: 20px 0;
 		background-color: #232323;
@@ -169,6 +189,10 @@
 			margin-top: 10px;
 			color: #b5b7ad;
 			font-family: $contentFont;
+			a {
+				margin-left: 0;
+				color: inherit;
+			}
 		}
 		li.head {
 			font-family: $navbarFont;

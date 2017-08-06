@@ -48,4 +48,15 @@ h2 {
 
 body {
 	position: relative;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+	font-family: $navbarFont;
+	text-align: center;
+	margin: 75px auto;
+	@media (max-width: $phoneMax) {
+		margin: 100px auto 0 auto;
+	}
 }

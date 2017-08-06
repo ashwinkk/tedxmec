@@ -50,6 +50,10 @@ h2 {
 	}
 }
 
+.ted-container {
+	margin-top: 30px;
+}
+
 .ted {
 	text-align: center;
 	p {
@@ -112,7 +116,7 @@ h2 {
 		background-image: url("../imgs/college.jpg");
 		background-size: contain;
 		background-position: center;
-		background-color: #a10015;
+		background-color: #2d2321;
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		margin: auto;
@@ -147,6 +151,16 @@ h2 {
 }
 
 .theme-container {
+	.overlay-theme {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background-image: url("../imgs/theme.png");
+		z-index: 0;
+	}
+	position: relative;
 	margin-bottom: 0;
 	p {
 		color: white;
@@ -155,6 +169,8 @@ h2 {
 	background-repeat: repeat;
 	padding: 40px;
 	.mec-theme {
+		z-index: 1;
+		position: relative;
 		.bold-head {
 			color: #bf3642;
 			text-align: center;

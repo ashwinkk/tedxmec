@@ -1,0 +1,25 @@
+@import 'partials/_base';
+@import 'partials/normalise.css';
+@import 'partials/headfoot';
+@import 'partials/theme';
+
+.contact-container {
+	.contact {
+		p {
+			color: rgba(48, 48, 47, .75);
+		}
+		img {
+			border-radius: 50%;
+			width: 150px;
+		}
+		@media (max-width: $ipad) {
+			text-align: center;
+			img {
+				margin-bottom: 20px;
+			}
+		}
+		@media (max-width: $phoneMax) {
+			margin: 40px auto;
+		}
+	}
+}

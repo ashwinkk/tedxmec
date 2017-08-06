@@ -43,17 +43,9 @@ h3 {
 				margin: 30px auto 10px auto;
 				display: block;
 				padding: 5px 10px;
-			}
-			.directions {
-				color: #ff1300;
-				margin: 20px auto;
-				text-decoration: none;
-				border: 1px solid #eda8a2;
-				display: block;
-				width: 60%;
-				font-size: 16px;
-				border-radius: 5px;
-				padding: 12px 0px;
+				@media (max-width: $phoneMax) {
+					width: 50%;
+				}
 			}
 		}
 	}
@@ -61,6 +53,19 @@ h3 {
 		.row {
 			margin: 0;
 		}
+	}
+	.directions {
+		color: #ff1300;
+		margin: 20px auto;
+		text-decoration: none;
+		border: 1px solid #eda8a2;
+		display: block;
+		width: 60%;
+		font-size: 16px;
+		border-radius: 5px;
+		padding: 12px 0px;
+		text-align: center;
+		margin-top: 75px;
 	}
 }
 
