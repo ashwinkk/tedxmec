@@ -1,4 +1,16 @@
 {
+	"curr_speakers": [
+		{
+			"name": "Mr. Srikant Suryanarayanan",
+			"image_url": "imgs/speakers/3.png",
+			"description": "Srikant Surayanarayanan is the founder and chairman of Ishika Farms. At TEDxMEC, he will talk about why sustainable practises are the need of the hour and how it needs to be incorporated."
+		},
+		{
+			"name": "Dr. K. N Raghavan",
+			"image_url": "imgs/speakers/2.png",
+			"description": "Dr. K. N Raghavan, IRS is the CEO of NORKA ROOTS and former Customs Commissioner of Kochi. At TEDxMEC, he will talk about why following one's passion is not always the best move."
+		}
+	],
 	"speakers": [
 		{
 			"url": "imgs/speakers/andrine.jpg",
@@ -172,17 +184,17 @@
 			"phone": "+91 9985238993"
 		},
 		{
-			"img": "imgs/team/t1.jpg",
-			"name": "Sachin Jose",
-			"pos": "ORAGANISER",
-			"email": "sachinjose@tedxmec.in",
+			"img": "imgs/team/t4.jpg",
+			"name": "Aravind R Menon",
+			"pos": "ORGANISER",
+			"email": "aravindmenon@tedxmec.in",
 			"phone": "+91 9985238993"
 		},
 		{
-			"img": "imgs/team/t4.jpg",
-			"name": "Aravind R Menon",
-			"pos": "MARKETING",
-			"email": "aravindmenon@tedxmec.in",
+			"img": "imgs/team/t1.jpg",
+			"name": "Sachin Jose",
+			"pos": "ORGANISER",
+			"email": "sachinjose@tedxmec.in",
 			"phone": "+91 9985238993"
 		},
 		{
@@ -219,14 +231,14 @@
 			"name": "Ankita Elizbeth Mathew",
 			"pos": "Curator",
 			"dp": "imgs/team/t5.jpg",
-			"phone": "+91 9985238993",
+			"phone": "+91 9995134116",
 			"email": "ankitaelizabethmathew@tedxmec.in"
 		},
 		{
 			"name": "Aravind R Menon",
-			"pos": "Marketing",
+			"pos": "Organiser",
 			"dp": "imgs/team/t4.jpg",
-			"phone": "+91 9985238993",
+			"phone": "+91 9744463145",
 			"email": "aravindmenon@tedxmec.in"
 		}
 	]
