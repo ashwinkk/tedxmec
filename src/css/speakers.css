@@ -1,41 +1,124 @@
-/* line 2, ../sass/partials/_base.scss */
+/* line 1, ../sass/partials/_notification.scss */
+.snackbar {
+  position: fixed;
+  bottom: 0;
+  transition: transform 0.5s;
+  width: 100%;
+  background-color: #ff4431;
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  transform: translateY(100%);
+  transition-timing-function: ease-in-out;
+  z-index: 99;
+}
+/* line 13, ../sass/partials/_notification.scss */
+.snackbar .snackbar-content {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+/* line 18, ../sass/partials/_notification.scss */
+.snackbar .snackbar-content .content-notif {
+  width: 80%;
+}
+/* line 21, ../sass/partials/_notification.scss */
+.snackbar .snackbar-content p {
+  text-align: center;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  line-height: 80px;
+}
+/* line 27, ../sass/partials/_notification.scss */
+.snackbar .snackbar-content p a {
+  padding: 10px;
+  background: white;
+  border-radius: 5px;
+  margin-left: 5px;
+  color: #ff4431;
+}
+@media (max-width: 600px) {
+  /* line 21, ../sass/partials/_notification.scss */
+  .snackbar .snackbar-content p {
+    text-align: left;
+  }
+  /* line 36, ../sass/partials/_notification.scss */
+  .snackbar .snackbar-content p a {
+    padding: 8px 0;
+  }
+}
+@media (max-width: 350px) {
+  /* line 21, ../sass/partials/_notification.scss */
+  .snackbar .snackbar-content p {
+    line-height: 40px;
+  }
+}
+@media (max-width: 600px) {
+  /* line 45, ../sass/partials/_notification.scss */
+  .snackbar .snackbar-content .content-notif {
+    width: 100%;
+  }
+}
+/* line 50, ../sass/partials/_notification.scss */
+.snackbar #close-notif {
+  line-height: 80px;
+  color: white;
+  margin-right: 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+@media (max-width: 600px) {
+  /* line 50, ../sass/partials/_notification.scss */
+  .snackbar #close-notif {
+    margin-right: 10px;
+  }
+}
+
+/* line 62, ../sass/partials/_notification.scss */
+.show-notif {
+  transform: translateY(0);
+}
+
+/* line 3, ../sass/partials/_base.scss */
 .container {
   max-width: 980px;
   margin: 90px auto;
 }
 
-/* line 14, ../sass/partials/_base.scss */
+/* line 15, ../sass/partials/_base.scss */
 a,
 a:hover,
 a:active {
   text-decoration: none;
 }
 
-/* line 20, ../sass/partials/_base.scss */
+/* line 21, ../sass/partials/_base.scss */
 .stay {
   overflow-y: hidden;
 }
 
-/* line 24, ../sass/partials/_base.scss */
+/* line 25, ../sass/partials/_base.scss */
 #content,
 #footer-outer {
   will-change: filter;
   transition: filter 0.3s;
 }
 
-/* line 30, ../sass/partials/_base.scss */
+/* line 31, ../sass/partials/_base.scss */
 .filter-transit {
   -webkit-filter: blur(5px);
   filter: blur(5px);
 }
 
-/* line 34, ../sass/partials/_base.scss */
+/* line 35, ../sass/partials/_base.scss */
 #content {
   position: relative;
 }
 
 @media (max-width: 600px) {
-  /* line 39, ../sass/partials/_base.scss */
+  /* line 40, ../sass/partials/_base.scss */
   .container {
     margin: 10px auto;
   }

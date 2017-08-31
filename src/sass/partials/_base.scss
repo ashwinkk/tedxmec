@@ -1,11 +1,12 @@
-@import 'compass/css3/filter';
+@import "compass/css3/filter";
+@import "./notification";
 .container {
 	max-width: 980px;
 	margin: 90px auto;
 }
 
-$contentFont: 'Poppins', sans-serif;
-$navbarFont: 'Montserrat', sans-serif;
+$contentFont: "Poppins", sans-serif;
+$navbarFont: "Montserrat", sans-serif;
 
 $phoneMax: 600px;
 $iphone5: 360px;

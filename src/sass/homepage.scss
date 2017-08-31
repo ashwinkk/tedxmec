@@ -1,7 +1,7 @@
-@import 'partials/_base';
-@import 'partials/normalise.css';
-@import 'partials/headfoot';
-@import 'partials/theme';
+@import "partials/_base";
+@import "partials/normalise.css";
+@import "partials/headfoot";
+@import "partials/theme";
 p,
 ul {
 	font-family: $contentFont;
@@ -186,6 +186,13 @@ h2 {
 				}
 			}
 		}
+	}
+	a.register-link {
+		padding: 10px;
+		background: white;
+		border-radius: 5px;
+		margin: auto;
+		color: #ff4431;
 	}
 	@media (max-width: $phoneMax) {
 		padding: 15px;

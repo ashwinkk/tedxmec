@@ -61,6 +61,11 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
 
 $(document).ready(function() {
 	$("#navbar-button").click(handleNavbar);
+	$("#close-notif").click(handleNotifClose);
+	console.log("heelo");
+	setTimeout(function() {
+		$("#snackbar").addClass("show-notif");
+	}, 10);
 });
 
 function handleNavbar(e) {
@@ -84,6 +89,10 @@ var wrapperMenu = document.querySelector(".wrapper-menu");
 wrapperMenu.addEventListener("click", function() {
 	wrapperMenu.classList.toggle("open");
 });
+
+function handleNotifClose() {
+	$("#snackbar").css({ transform: "translateY(100%)" });
+}
 
 var baseData = [
 	{
